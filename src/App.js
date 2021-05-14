@@ -1,25 +1,30 @@
 
 import './App.css';
-import Row from './Row';
-import Banner from './Banner';
-import Nav from './Nav';
-import requests from './requests';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from './Home.js';
+import Profiles from './Profiles.js'
 
 function App() {
   return (
-    <div className="App">
-    <Nav/>
-    <Banner url={requests.fetchActionMovies}/>
-    <Row title ="NETFLIX ORIGINALS" url={requests.fetchNtflixOriginals} largeRow={true}/>
-    <Row title ="Trending Now" url={requests.fetchTrending}/>
-    <Row title ="Top rated" url={requests.fetchTopRated}/>
-    <Row title ="Action Movies" url={requests.fetchActionMovies}/>
-    <Row title ="Comedy Movies" url={requests.fetchComedyMovies}/>
-    <Row title ="Horror Movies" url={requests.fetchHorrornMovies}/>
-    <Row title ="Romance Movies" url={requests.fetchRomanceMovies}/>
-    <Row title ="Documentaries" url={requests.fetchDocumentaries}/>
-
-    </div>
+    
+    <Router>
+  <switch>
+        <Route exact path="/browse">
+            <Home />
+          </Route>
+          <Route exact path="/">
+          <Profiles />
+          
+  </Route>
+   
+     </switch>
+    </Router>
+   
   );
 }
 
