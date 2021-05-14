@@ -8,32 +8,100 @@ body
   color:whitesmoke;
 }
 @media screen 
-  and (min-device-width: 150px) 
-  and (min-device-height: 150px) 
+  and (min-device-width: 15px) 
+  and (min-device-height: 15px) 
   and (-webkit-device-pixel-ratio: 2) {
     .App
     {
       width: fit-content;
     }
+    .watching
+    {
+      margin-left: 10px;
+    }
 
+}
+@media screen 
+  and (max-device-width: 1000px) 
+{
+.watching
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  margin-top: 50%;
+  color: white;
+  margin-left: 60%;
+ 
 }
 .names
 {
-  font-size: 22px;
-  margin-left: 370px;
+  display: block;
+  margin-left: 15%;
   letter-spacing: 1px;
   word-spacing: 20px;
   color: rgb(133, 124, 124);
 }
+.center
+{
+  margin-left:5%;
+}
+div p{
+  text-align: center;
+  color: rgb(133, 124, 124);
+}
+div p:hover{
+  
+  color: rgb(238, 230, 230);
+}
+.profiles
+{
+  flex: auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 1px solid #021a40;
+   transition-timing-function: ease-in;
+   transition: all 0.5s;
+  
+ 
+}
+.flexAlign
+{
+  display: flex;
+  flex-direction: row;
+}
+.nav_logo1
+{
+  
+    position: fixed;
+    left: 35%;
+    top: 8px;
+    width:150px;
+    margin-top: 15px;
+    object-fit: contain;
+    
+}
+}
+@media screen 
+  and (min-device-width: 1000px) 
+{
+   .center
+   {
+     margin-left: 350px;
+   } 
+
 .watching
 {
   font-size: 50px;
   font-family: 'Courier New', Courier, monospace;
-  margin-left: 550px;
+  margin-left: 50px;
   margin-top: 180px;
+  color: white;
 }
 .profiles
 {
+  flex: auto;
   width: 160px;
   height: 160px;
   border-radius: 5px;
@@ -59,3 +127,19 @@ cursor: pointer;
     object-fit: contain;
     
 }
+div p{
+  text-align: center;
+  font-size: 20px;
+  color: rgb(133, 124, 124);
+}
+div p:hover{
+  
+  color: rgb(238, 230, 230);
+}
+.flexAlign
+{
+  display: flex;
+  flex-direction: row;
+}
+}
+
