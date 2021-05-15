@@ -11,7 +11,7 @@ function Home() {
     <div className="App">
     <Nav/>
     <Banner url={requests.fetchActionMovies}/>
-    <Row title ="NETFLIX ORIGINALS" url={requests.fetchNtflixOriginals} largeRow={true}/>
+    <Row title ="NETFLIX ORIGINALS" url={requests.fetchActionMovies} largeRow={true}/>
     <Row title ="Trending Now" url={requests.fetchTrending}/>
     <Row title ="Top rated" url={requests.fetchTopRated}/>
     <Row title ="Action Movies" url={requests.fetchActionMovies}/>
