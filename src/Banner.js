@@ -23,7 +23,7 @@ export class Banner extends Component {
            return request;
         }
         fetchData();
-       
+        console.log("Test code");
      }
 
     render() {
