@@ -14,6 +14,7 @@ export class Banner extends Component {
        componentWillMount() {
         const url = this.props.url;
         var request = null;
+        console.log("test");
         const fetchData = async ()=>
         {
           request = await axios.get(url);
