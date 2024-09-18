@@ -24,6 +24,7 @@ export class Banner extends Component {
         }
         fetchData();
         console.log("Test code");
+        console.log("Test code 123");
      }
 
     render() {
