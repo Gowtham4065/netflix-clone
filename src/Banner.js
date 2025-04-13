@@ -24,6 +24,7 @@ export class Banner extends Component {
            return request;
         }
         fetchData();
+        console.log("test")
        
      }
 
