@@ -37,6 +37,7 @@ export default class Row extends Component {
            return request;
         }
         fetchData();
+        console.log("test")
        
      }
      handleClick(movie)
